@@ -8,10 +8,11 @@ Este guia orienta a criação diária automática. Siga à risca.
 - **Não fazemos empréstimos.** Toda peça e toda legenda deixam isso claro (rodapé da arte + linha na legenda).
 - Site/cadastro: link na bio (https://edison-loans-hq.lovable.app).
 
-## Promoções vigentes (só divulgar estas, com estes valores)
-- 7 dias de teste grátis.
-- Primeiro mês por R$ 9,90.
-- Do 2º ao 12º mês: R$ 19,90 por mês.
+## Promoções vigentes (só divulgar assim, como DUAS OPÇÕES — decisão do dono em 26/11/2026)
+- Opção 1: teste grátis de 7 dias; depois, R$ 19,90 por mês.
+- Opção 2: começar já, sem teste, com o 1º mês por R$ 9,90; depois, R$ 19,90 por mês.
+- NUNCA escrever "7 dias grátis E 1º mês por R$ 9,90" como se fossem juntos: o sistema não junta as duas.
+- Forma curta aprovada: "Teste 7 dias grátis ou comece já por R$ 9,90 no 1º mês".
 Se o dono avisar que mudou, atualize aqui antes de usar.
 
 ## Público
