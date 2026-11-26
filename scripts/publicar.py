@@ -67,7 +67,8 @@ def registrar(item):
 def escolher_horario(agora, forcado):
     if forcado:
         return forcado
-    for h in HORARIOS:
+    # Do mais recente para o mais antigo: as janelas se sobrepõem (ex.: 10h05 cabe na de 08h e na de 10h).
+    for h in reversed(HORARIOS):
         alvo = agora.replace(hour=int(h[:2]), minute=int(h[2:]), second=0, microsecond=0)
         delta = (agora - alvo).total_seconds() / 60
         if -JANELA_ANTES_MIN <= delta <= JANELA_DEPOIS_MIN:
