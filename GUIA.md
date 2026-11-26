@@ -38,12 +38,9 @@ Pessoas que emprestam dinheiro (pequenos credores, quem empresta para conhecidos
 | Horário | Tipo | Arquivo na fila |
 |---|---|---|
 | 08:00 | Feed | fila/AAAA-MM-DD/0800-feed.jpg + .json |
-| 13:00 | Story | fila/AAAA-MM-DD/1300-story.jpg + .json |
-| 19:00 | Story | fila/AAAA-MM-DD/1900-story.jpg + .json |
+| 19:00 | Feed | fila/AAAA-MM-DD/1900-feed.jpg + .json |
 
-3 peças por dia (decisão do dono em 26/11/2026, para economizar o plano do Claude). O horário 16:00 continua existindo na automação, mas só publica se o dono pedir uma peça extra.
-
-JSON: `{"tipo": "feed"|"story", "titulo": "...", "legenda": "..."}` (stories não usam legenda; deixe "").
+2 posts no feed por dia, sem stories (decisão do dono em 26/11/2026): com poucos seguidores, stories quase não têm alcance; o feed fica no perfil, aparece em hashtags e no Explorar. Voltar a incluir stories quando o perfil passar de ~100 seguidores (avisar o dono). Os horários 13:00 e 16:00 continuam na automação, mas só publicam se houver peça.
 
 ## Temas para variar (rodízio)
 Dores do caderno/planilha; funcionalidade específica (cobrança no WhatsApp, atrasos, juros mensal/semanal/diário, parcelado, Tabela Price, relatórios, recibos, Pix); passo a passo de uso; dúvidas frequentes (é seguro? funciona no celular? preciso instalar?); promoção vigente; dica de organização para quem empresta; bastidores/novidades do sistema (só o que for real).

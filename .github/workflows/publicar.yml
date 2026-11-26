@@ -2,7 +2,7 @@ name: Publicar no Instagram
 
 on:
   schedule:
-    # Horário de Brasília (UTC−3): 08h (feed), 13h (story), 16h (opcional) e 19h (story), todos os dias.
+    # Horário de Brasília (UTC−3): 08h e 19h (feed); 13h e 16h opcionais, todos os dias.
     # Minuto 3 para fugir do pico do agendador do GitHub no minuto 0.
     - cron: "3 11 * * *"
     - cron: "3 16 * * *"

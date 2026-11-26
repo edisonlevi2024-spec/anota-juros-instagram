@@ -2,7 +2,7 @@
 """Publica no Instagram @anotajuros a peça do horário atual (horário de Brasília).
 
 Fila: fila/AAAA-MM-DD/HHMM-<feed|story>.jpg + .json ({"tipo": "feed"|"story", "legenda": "..."}).
-Horários: 08:00 feed, 13:00 story, 19:00 story (todos os dias). 16:00 é opcional (só publica se houver peça).
+Horários: 08:00 e 19:00 (feed, todos os dias). 13:00 e 16:00 são opcionais (só publicam se houver peça).
 
 Regras de segurança:
 - Publica SOMENTE na conta @anotajuros (ID fixo); confere o @ antes de publicar.
@@ -91,7 +91,7 @@ def main():
     meta = next((os.path.join(pasta, n) for n in sorted(os.listdir(pasta)) if n.startswith(horario) and n.endswith(".json")), None) if os.path.isdir(pasta) else None
     if not meta:
         print(f"Sem peça na fila para {dia} {horario}.")
-        if horario != "1600":  # 16h é opcional; nos demais, registra a falta para o aviso diário
+        if horario in ("0800", "1900"):  # 13h e 16h são opcionais; nos fixos, registra a falta para o aviso diário
             registrar({"peca": f"{dia}/{horario}", "status": "sem_peca", "em": agora.isoformat()})
         return 0
     peca = f"{dia}/{os.path.basename(meta)[:-5]}"
