@@ -38,10 +38,10 @@ Pessoas que emprestam dinheiro (pequenos credores, quem empresta para conhecidos
 | Horário | Tipo | Arquivo na fila |
 |---|---|---|
 | 08:00 | Feed | fila/AAAA-MM-DD/0800-feed.jpg + .json |
-| 10:00 | Story | fila/AAAA-MM-DD/1000-story.jpg + .json |
 | 13:00 | Story | fila/AAAA-MM-DD/1300-story.jpg + .json |
-| 16:00 | Feed | fila/AAAA-MM-DD/1600-feed.jpg + .json |
 | 19:00 | Story | fila/AAAA-MM-DD/1900-story.jpg + .json |
+
+3 peças por dia (decisão do dono em 26/11/2026, para economizar o plano do Claude). O horário 16:00 continua existindo na automação, mas só publica se o dono pedir uma peça extra.
 
 JSON: `{"tipo": "feed"|"story", "titulo": "...", "legenda": "..."}` (stories não usam legenda; deixe "").
 

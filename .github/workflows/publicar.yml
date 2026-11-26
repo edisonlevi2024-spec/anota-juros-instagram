@@ -2,17 +2,16 @@ name: Publicar no Instagram
 
 on:
   schedule:
-    # Horário de Brasília (UTC−3): 08h, 10h, 13h, 16h e 19h, todos os dias.
+    # Horário de Brasília (UTC−3): 08h (feed), 13h (story), 16h (opcional) e 19h (story), todos os dias.
     # Minuto 3 para fugir do pico do agendador do GitHub no minuto 0.
     - cron: "3 11 * * *"
-    - cron: "3 13 * * *"
     - cron: "3 16 * * *"
     - cron: "3 19 * * *"
     - cron: "3 22 * * *"
   workflow_dispatch:
     inputs:
       horario:
-        description: "Forçar horário (0800, 1000, 1300, 1600 ou 1900). Vazio = horário atual."
+        description: "Forçar horário (0800, 1300, 1600 ou 1900). Vazio = horário atual."
         required: false
       dia:
         description: "Forçar dia (AAAA-MM-DD). Vazio = hoje."

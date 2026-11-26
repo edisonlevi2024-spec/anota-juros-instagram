@@ -2,7 +2,7 @@
 """Publica no Instagram @anotajuros a peça do horário atual (horário de Brasília).
 
 Fila: fila/AAAA-MM-DD/HHMM-<feed|story>.jpg + .json ({"tipo": "feed"|"story", "legenda": "..."}).
-Horários: 08:00 feed, 10:00 story, 13:00 story, 16:00 feed, 19:00 story (todos os dias).
+Horários: 08:00 feed, 13:00 story, 19:00 story (todos os dias). 16:00 é opcional (só publica se houver peça).
 
 Regras de segurança:
 - Publica SOMENTE na conta @anotajuros (ID fixo); confere o @ antes de publicar.
@@ -22,7 +22,7 @@ import urllib.request
 IG_ID = "17841415330772972"
 IG_USUARIO = "anotajuros"
 GRAPH = "https://graph.facebook.com/v25.0/"
-HORARIOS = ["0800", "1000", "1300", "1600", "1900"]
+HORARIOS = ["0800", "1300", "1600", "1900"]
 JANELA_ANTES_MIN = 10   # aceita rodar até 10 min antes do horário
 JANELA_DEPOIS_MIN = 150  # e até 2h30 depois (atrasos do agendador do GitHub)
 BRT = dt.timezone(dt.timedelta(hours=-3))
@@ -91,8 +91,9 @@ def main():
     meta = next((os.path.join(pasta, n) for n in sorted(os.listdir(pasta)) if n.startswith(horario) and n.endswith(".json")), None) if os.path.isdir(pasta) else None
     if not meta:
         print(f"Sem peça na fila para {dia} {horario}.")
-        registrar({"peca": f"{dia}/{horario}", "status": "sem_peca", "em": agora.isoformat()})
-        return 1
+        if horario != "1600":  # 16h é opcional; nos demais, registra a falta para o aviso diário
+            registrar({"peca": f"{dia}/{horario}", "status": "sem_peca", "em": agora.isoformat()})
+        return 0
     peca = f"{dia}/{os.path.basename(meta)[:-5]}"
     if peca in ja_publicados():
         print(f"{peca} já foi publicada; não repito.")
