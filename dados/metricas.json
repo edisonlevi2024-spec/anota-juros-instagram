@@ -1,69 +1,11 @@
 {
-  "coletado_em": "2026-11-26T14:08:01.480568-03:00",
+  "coletado_em": "2026-11-26T16:59:02.017851-03:00",
   "perfil": {
-    "username": "anotajuros",
-    "followers_count": 0,
-    "follows_count": 0,
-    "media_count": 3
+    "username": null,
+    "followers_count": null,
+    "follows_count": null,
+    "media_count": null
   },
-  "posts": [
-    {
-      "id": "18154491031477001",
-      "caption": "Ainda anota empréstimo no caderno? 📒\n\nQuando os clientes aumentam, o caderno vira problema: juros esquecidos, vencimento perdido e cobrança atrasada.\n\nCom o Ano",
-      "comments_count": 0,
-      "like_count": 0,
-      "media_product_type": "FEED",
-      "media_type": "IMAGE",
-      "permalink": "https://www.instagram.com/p/DgNSU9iDoFI/",
-      "timestamp": "2026-11-26T14:09:44+0000",
-      "insights": {
-        "reach": 0,
-        "views": 0,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 0
-      }
-    },
-    {
-      "id": "18095624441691772",
-      "caption": "🚨💰 SE VOCÊ EMPRESTA DINHEIRO, PRECISA VER ISSO!\n\n🔥 Seu dinheiro está na rua, mas você sabe exatamente quanto tem para receber?\n\n❌ Chega de esquecer vencimentos!",
-      "comments_count": 0,
-      "like_count": 0,
-      "media_product_type": "FEED",
-      "media_type": "IMAGE",
-      "permalink": "https://www.instagram.com/p/De_skL1RFT-/",
-      "timestamp": "2026-10-27T10:58:59+0000",
-      "insights": {
-        "reach": 1,
-        "views": 1,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 0
-      }
-    },
-    {
-      "id": "17939561160407564",
-      "caption": "🚨💰 QUEM TRABALHA COM  #EMPRÉSTIMOS PRECISA CONHECER ESSE APLICATIVO!  Acesse nosso site:\nhttps://edison-loans-hq.lovable.app\n\n❌ Chega de perder tempo com cadern",
-      "comments_count": 0,
-      "like_count": 0,
-      "media_product_type": "FEED",
-      "media_type": "IMAGE",
-      "permalink": "https://www.instagram.com/p/De_qo0nRGUx/",
-      "timestamp": "2026-10-27T10:50:02+0000",
-      "insights": {
-        "reach": 1,
-        "views": 1,
-        "saved": 1,
-        "shares": 0,
-        "total_interactions": 1
-      }
-    }
-  ],
-  "stories_ativos": [
-    {
-      "id": "17998249881026109",
-      "timestamp": "2026-11-26T17:07:41+0000",
-      "insights": {}
-    }
-  ]
+  "posts": [],
+  "stories_ativos": []
 }
