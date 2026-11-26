@@ -1,0 +1,10 @@
+@font-face{font-family:D;src:local("Inter Display Black"),local("Inter Display");font-weight:900}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--preto:#050505;--ouro:#F2C14E;--ouro2:#B8860B;--verde:#25D366;--verde2:#0E8F47;--branco:#F7F4EC;--cinza:#9A968C}
+body{width:var(--w);height:var(--h);background:var(--preto);color:var(--branco);font-family:"Inter Display","Inter",sans-serif;overflow:hidden;position:relative}
+.pauta{position:absolute;inset:0;background-image:repeating-linear-gradient(to bottom,transparent 0 58px,rgba(242,193,78,.10) 58px 60px);mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0) 70%)}
+.margem{position:absolute;top:0;bottom:0;left:120px;width:3px;background:rgba(37,211,102,.35)}
+.ouro{background:linear-gradient(180deg,#FFE08A,#F2C14E 45%,#B8860B);-webkit-background-clip:text;color:transparent}
+.verde{color:var(--verde)}
+.selo{display:inline-block;border:3px solid var(--ouro);color:var(--ouro);border-radius:999px;padding:14px 30px;font-weight:800;font-size:34px;letter-spacing:.5px}
+.aviso{position:absolute;left:0;right:0;bottom:44px;text-align:center;color:var(--cinza);font-size:26px;font-weight:500}
